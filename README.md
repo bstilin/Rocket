@@ -26,7 +26,7 @@ See the source code and use Julia's built-in help mode to access docstrings. The
 
 - `Rocket.jl`: A Julia implementation of the ROCKET transform as introduced in [ROCKET: Exceptionally fast and accurate time series classification using random convolutional kernels](arXiv:1910.13051). Note that this code only implements the ROCKET transform. As such, it does NOT perform standardization of the input data. Further, it assumes that the time series samples are all of the same length and do not have any missing data.
 
-`RocketHelperFunctions.jl`: A collection of functions useful for interfacing the ROCKET transform with classification algorithms.
+- `RocketHelperFunctions.jl`: A collection of functions useful for interfacing the ROCKET transform with classification algorithms.
 
 - `Rocket_mv.jl`: A Julia implementation of the ROCKET transform as introduced in [ROCKET: Exceptionally fast and accurate time series classification using random convolutional kernels](arXiv:1910.13051) adapted for multivariable time series. The original paper does not prescribe a specific way of adapting ROCKET to multivariable time series. For details on the adaptation method used here, see below and docstring. This code does NOT perform standardization of the input data. Further, it assumes that the time series samples are all of the same length and do not have any missing data.
 
