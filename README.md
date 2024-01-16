@@ -30,8 +30,6 @@ See the source code and use Julia's built-in help mode to access docstrings. The
 
 - `Rocket_mv.jl`: A Julia implementation of the ROCKET transform as introduced in [ROCKET: Exceptionally fast and accurate time series classification using random convolutional kernels](arXiv:1910.13051) adapted for multivariable time series. The original paper does not prescribe a specific way of adapting ROCKET to multivariable time series. For details on the adaptation method used here, see below and docstring. This code does NOT perform standardization of the input data. Further, it assumes that the time series samples are all of the same length and do not have any missing data.
 
-- `ClassifierExamples.jl`: A collection of examples demonstrating how to run L1 or elastic-net penalized logistic regression, LASSO, and ridge regression using MLJLinearModels.jl and ScikitLearn.jl.
-
 ### data
 
 A folder in which to store your data. The examples assume the UCR data is contained in this folder.
@@ -42,3 +40,6 @@ Example datasets were taken from the [UCR Time Series Classification Archive](ht
 - `CoffeeExample.jl`: A univariate, binary classification problem using the ridge regression implementation from MLJLinearModels.jl. The code assumes your data folder contains the folder "Coffee" from the UCR archive.
 
 - `ChlorineConcentrationExample.jl`: A univariate, three-class classification problem using the ridge regression implementation from ScikitLearn.jl. See Python documentation for `sklearn.linear_model.RidgeClassifier` for details of how ridge regression is applied to a multiclass problem. The code assumes your data folder contains the folder "ChlorineConcentration" from the UCR archive.
+  
+- `ClassifierExamples.jl`: A collection of examples demonstrating how to run L1 or elastic-net penalized logistic regression, LASSO, and ridge regression using MLJLinearModels.jl and ScikitLearn.jl.
+
