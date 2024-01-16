@@ -1,4 +1,4 @@
-"Class definition and functions for implementing the Rocket transform. This implementaiton does NOT perform standardization 
+"Class definition and functions for implementing the Rocket transform. This implementation does NOT perform standardization 
 of the input data. Further, it assumes that the time series are all of the same length and do not have any missing data" 
 
 using Statistics
