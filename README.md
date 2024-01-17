@@ -24,11 +24,11 @@ See the source code and use Julia's built-in help mode to access docstrings. The
 
 ### source
 
-- `Rocket.jl`: A Julia implementation of the ROCKET transform as introduced in [ROCKET: Exceptionally fast and accurate time series classification using random convolutional kernels](arXiv:1910.13051). Note that this code only implements the ROCKET transform. As such, it does NOT perform standardization of the input data. Further, it assumes that the time series samples are all of the same length and do not have any missing data.
+- `Rocket.jl`: A Julia implementation of the ROCKET transform as introduced in [ROCKET: Exceptionally fast and accurate time series classification using random convolutional kernels](https://link.springer.com/article/10.1007/s10618-020-00701-z). Note that this code only implements the ROCKET transform. As such, it does NOT perform standardization of the input data. Further, it assumes that the time series samples are all of the same length and do not have any missing data.
 
 - `RocketHelperFunctions.jl`: A collection of functions useful for interfacing the ROCKET transform with classification algorithms.
 
-- `Rocket_mv.jl`: A Julia implementation of the ROCKET transform as introduced in [ROCKET: Exceptionally fast and accurate time series classification using random convolutional kernels](arXiv:1910.13051) adapted for multivariable time series. The original paper does not prescribe a specific way of adapting ROCKET to multivariable time series. For details on the adaptation method used here, see below and docstring. This code does NOT perform standardization of the input data. Further, it assumes that the time series samples are all of the same length and do not have any missing data.
+- `Rocket_mv.jl`: A Julia implementation of the ROCKET transform as introduced in [ROCKET: Exceptionally fast and accurate time series classification using random convolutional kernels](https://link.springer.com/article/10.1007/s10618-020-00701-z) adapted for multivariable time series. The original paper does not prescribe a specific way of adapting ROCKET to multivariable time series. For details on the adaptation method used here, see below and docstring. This code does NOT perform standardization of the input data. Further, it assumes that the time series samples are all of the same length and do not have any missing data.
 
 ### data
 
@@ -42,4 +42,6 @@ Example datasets were taken from the [UCR Time Series Classification Archive](ht
 - `ChlorineConcentrationExample.jl`: A univariate, three-class classification problem using the ridge regression implementation from ScikitLearn.jl. See Python documentation for `sklearn.linear_model.RidgeClassifier` for details of how ridge regression is applied to a multiclass problem. The code assumes your data folder contains the folder "ChlorineConcentration" from the UCR archive.
   
 - `ClassifierExamples.jl`: A collection of examples demonstrating how to run L1 or elastic-net penalized logistic regression, LASSO, and ridge regression using MLJLinearModels.jl and ScikitLearn.jl.
+
+- `rocket_mv.ipynb`: A demonstration of rocket applied to multivariate time series classification, with one multiclass example with 9 channels, ([`ArticularyWordRecognition`](http://www.timeseriesclassification.com/description.php?Dataset=ArticularyWordRecognition)), one multiclass example with 2 channels ([PenDigits](http://www.timeseriesclassification.com/description.php?Dataset=PenDigits))/([AtrialFibrillation](http://www.timeseriesclassification.com/description.php?Dataset=AtrialFibrillation)), and a demonstration of a hybrid approach using ROCKET and catch22 ([catch22: CAnonical Time-series CHaracteristics](https://link.springer.com/article/10.1007/s10618-019-00647-x)) as a proof of concept to combine relevant time series features for classification.
 
