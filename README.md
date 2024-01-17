@@ -20,6 +20,9 @@ Creating more explicit support for these features is planned for the future. Sys
 
 See the source code and use Julia's built-in help mode to access docstrings. The docstrings are written to be the main source of documentation.
 
+## Note on Multi-Threading
+ `Rocket.jl` and `Rocket_mv.jl` both use the Threads.@threads macro to speed up computation. See the Multi-Threading [documentation](https://docs.julialang.org/en/v1/manual/multi-threading/). The Julia discourse is useful for finding information on setting the number of available threads. 
+
 ## Contents
 
 ### source
